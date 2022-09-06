@@ -1,3 +1,4 @@
+from re import template
 from django.shortcuts import render
 
 # Create your views here.
@@ -12,3 +13,10 @@ class PostList(generic.ListView):
 class PostDetail(generic.DetailView):
     model = Post
     template_name = 'post_detail.html'
+def about(request):
+    return render(request,'about.html')
+
+def contact(request):
+    return render(request,'contact.html')
+def donate(request):
+    return render(request,'donate.html')
