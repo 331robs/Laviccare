@@ -5,8 +5,44 @@
 
     </head>
     <body>
+        <header class="masthead">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-8 col-md-10 mx-auto">
+                        <div class="site-heading">
+                            <h3 class=" site-heading my-4 mt-3 text-white">  </h3>
+                            <p class="text-light">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
         
-        <h1>donate</h1>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <form id="contact-form" class="contact__form" method="post" action="index.html"><br><br><br>
+                <h3 class="text-md mb-4">Selection Form</h3>
+                <div class="form-group">
+                    <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input name="email" type="email" class="form-control" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input name="name" type="text" class="form-control" placeholder="Name of the child selected for support" required>
+                </div>
+                <div class="form-group">
+                    <input name="name" type="text" class="form-control" placeholder="Tel or address" required>
+                </div>
+                <div class="form-group-2 mb-4">
+                    <textarea name="message" class="form-control" rows="4" placeholder="Other Details" required></textarea>
+                </div>
+                <button class="btn btn-danger" name="submit" type="submit">Submit</button>
+            </form>
+        </div>
+
     </body>
+    
 </html>
 {% endblock %}

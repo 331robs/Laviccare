@@ -6,8 +6,70 @@
 
     </head>
     <body>
+        <header class="masthead">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-8 col-md-10 mx-auto">
+                        <div class="site-heading">
+                            <h3 class=" site-heading my-4 mt-3 text-white">  </h3>
+                            <p class="text-light">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
         
-        <h1>You can Contact us</h1>
+
+<!-- contact form start -->
+<section class="contact-form-wrap section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-12 col-sm-12">
+				<form id="contact-form" class="contact__form" method="post" action="index.html"><br><br><br>
+					<h3 class="text-md mb-4">Contact Form</h3>
+					<div class="form-group">
+						<input name="name" type="text" class="form-control" placeholder="Your Name" required>
+					</div>
+					<div class="form-group">
+						<input name="email" type="email" class="form-control" placeholder="Email Address" required>
+					</div>
+					<div class="form-group-2 mb-4">
+						<textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+					</div>
+					<button class="btn btn-danger" name="submit" type="submit">Send Message</button>
+				</form>
+			</div>
+
+			<div class="col-lg-5 col-sm-12">
+				<div class="contact-content pl-lg-5 mt-5 mt-lg-0"><br><br><br>
+					<span class="text-muted">Contact Us to help and save the future generation</span>
+					<h2 class="mb-5 mt-2">Don’t Hesitate to contact with us for any kind of information</h2>
+
+					
+
+					<ul class="social-icons list-inline mt-5">
+						<li class="list-inline-item">
+							<a href="http://www.themefisher.com"><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="http://www.themefisher.com"><i class="fab fa-twitter"></i></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="http://www.themefisher.com"><i class="fab fa-linkedin-in"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="google-map">
+	<div id="map" data-latitude="40.712776" data-longitude="-74.005974" data-marker="images/marker.png" data-marker-name="Megakit"></div>
+</div>
+
     </body>
 </html>
 {% endblock %}
