@@ -1,6 +1,10 @@
 
 {% extends 'base.html' %} {% block content %}
 
+
+
+
+
 <div class="container">
   <div class="row">
     <div class="col-md-8 card mb-4  mt-3 left  top">
@@ -18,7 +22,7 @@
       {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
 </ul>  
 <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Select for Sponsorship &rarr;</a>
-  </div>
+  </div><br><br>
   
 </div>
 
