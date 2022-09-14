@@ -6,6 +6,7 @@ urlpatterns = [
     path('<slug:slug>/',views.PostDetail.as_view(),name='post_detail'),
     path('/about/',views.about,name="about"),
     path('/contact/',views.contact,name="contact"),
-    path('donate.html',views.donate,name="donate"),
+    path('/donate/',views.donate,name="donate"),
+    
     
 ]

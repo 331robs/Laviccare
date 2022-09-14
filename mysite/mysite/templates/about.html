@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-{% load static%}
+
 <html>
+	{% load static%}
     <head>
 
     </head>
@@ -84,7 +85,8 @@
 			<div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="team-item-wrap mb-5">
 					<div class="team-item position-relative">
-						<img loading="lazy" src="media/images/michael.jpeg" alt="team" class="img-fluid w-100">
+						{% load static %}
+						<img loading="lazy" src="{% static 'michael.jpeg' %}" alt="team" class="img-fluid w-100">
 						<div class="team-img-hover">
 							<ul class="team-social list-inline">
 								<li class="list-inline-item">
@@ -112,7 +114,7 @@
 			<div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="team-item-wrap mb-5">
 					<div class="team-item position-relative">
-						<img loading="lazy" src="media/images/ronnie.jpeg" alt="team" class="img-fluid w-100">
+						<img loading="lazy" src="{% static 'ronnie.jpeg' %}" alt="team" class="img-fluid w-100">
 						<div class="team-img-hover">
 							<ul class="team-social list-inline">
 								<li class="list-inline-item">
@@ -140,7 +142,7 @@
 			<div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="team-item-wrap mb-5 ">
 					<div class="team-item position-relative">
-						<img loading="lazy" src="media/images/esther.jpeg" alt="team" class="img-fluid w-100">
+						<img loading="lazy" src="{% static 'esther.jpeg' %}" alt="team" class="img-fluid w-100">
 						<div class="team-img-hover">
 							<ul class="team-social list-inline">
 								<li class="list-inline-item">

@@ -3,6 +3,7 @@ from django.contrib import admin
 # Register your models here.
 from .models import Post
 
+
 admin.site.site_header="Laviccare Admin"
 #admin.site.register(Post)
 class PostAdmin(admin.ModelAdmin):
@@ -11,4 +12,5 @@ class PostAdmin(admin.ModelAdmin):
     search_fields = ['title','content']
     prepopulated_fields={'slug':('title',)}
 
-admin.site.register(Post, PostAdmin)
+admin.site.register(Post,PostAdmin)
+

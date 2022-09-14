@@ -25,8 +25,13 @@ class Post(models.Model):
     #these are my changes made
     image_title = models.TextField()
     cover = models.ImageField(upload_to='images/')
+    
     class Meta:
         ordering = ['-created_on']
 
     def __str__(self):
         return self.title
+
+
+
+
